@@ -6,11 +6,19 @@ Elaborato 3: Manipolazione
 
 # Gatto_virtuale
 Autrice: Giulia Imperatori  
-[MediaPipe demo-ES6] https://giuliaimperatori.github.io/Gatto_matto_marionetta/
+[MediaPipe demo-ES6] https://giuliaimperatori.github.io/gatto_virtuale/
 
 
 ## Introduzione e tema
-Lo scopo di questo progetto è quello di poter interagire con un interfaccia, attraverso l'uso delle mani. Nel mio caso, ho realizzato un mini gioco in cui è possibile interagire con un gatto virtuale attraverso la posizione dell'indice sullo schermo, il quale è rappresentato da una mano, per poter capire dove si trova il dito sullo schermo.
+Lo scopo di questo progetto è quello di poter interagire con un interfaccia attraverso l'uso delle mani. Nel mio caso, ho realizzato un mini gioco in cui è possibile interagire con un gatto virtuale attraverso la posizione dell'indice sullo schermo, il quale è rappresentato da una mano, per poter capire dove si trova il dito sullo schermo. Il gatto segue il dito con la testa e se si posiziona l'indice su uno degli oggetti che corrisponde ad un'azione, il gatto risponderà di conseguenza svolgendo quella determinata azione. Ad esempio, se il dito si trova sullo scatolone, il gatto si troverà al suo interno. Le azioni disponibili sono: 
+- dito nella parte centrale dello schermo, gatto non fa nulla
+- dito nella parte superiore dello schermo, gatto guarda in alto
+- dito nella parte sinistra dello schermo, gatto guarda a sinistra
+- dito nella parte destra dello schermo, gatto guarda a destra
+- dito su scatolone, gatto dentro scatolone
+- dito su scatola cibo, gatto mangia dalla ciotola
+- dito su gomitolo, gatto gioca con gomitolo
+- diito su gatto, gatto fa le fusa
 
 
 ## Riferimenti progettuali
@@ -51,9 +59,16 @@ Sed enim ut sem viverra aliquet eget sit. Iaculis at erat pellentesque adipiscin
 [<img src="immagini-video/immagine_01.png" width="300" alt="immagine_01">]()
 [<img src="immagini-video/immagine_02.png" width="300" alt="immagine_02">]()
 [<img src="immagini-video/immagine_03.png" width="300" alt="immagine_03">]()
-[<img src="immagini-video/immagine_04.png" width="300" alt="immagine_02">]()
-[<img src="immagini-video/immagine_05.png" width="300" alt="immagine_03">]()
+[<img src="immagini-video/immagine_04.png" width="300" alt="immagine_04">]()
+[<img src="immagini-video/immagine_05.png" width="300" alt="immagine_05">]()
+[<img src="immagini-video/immagine_06.png" width="300" alt="immagine_06">]()
+[<img src="immagini-video/immagine_07.png" width="300" alt="immagine_07">]()
+[<img src="immagini-video/immagine_08.png" width="300" alt="immagine_08">]()
 
 
-video
+
+
+https://github.com/giuliaimperatori/gatto_virtuale/assets/126774277/8cbf9fd8-2180-4d5e-a9aa-45173857d398
+
+
 
