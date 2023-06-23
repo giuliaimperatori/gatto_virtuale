@@ -59,14 +59,14 @@ Per far in modo che l'immagine del gatto cambiasse in base alla posizione del di
 				
 	}
 
-	se inidce su cibo disegna gatto che mangia dalla ciotola
+	//se inidce su cibo disegna gatto che mangia dalla ciotola
 
 	else if (myXA > foodX && myXA < foodX + foodW && myYA > foodY && myYA < foodY + foodH) {
 		cat_image = image (cat_eating, 460, 950)
 		cat_image = image (bowl, 440, 1040)
 	}
 
-	se indice su scatolone disegna gatto dentro scatola
+	//se indice su scatolone disegna gatto dentro scatola
 
 	else if (myXA > boxX && myXA < boxX + boxW && myYA > boxY && myYA < boxY + boxH) {
 		cat_image = image (cat_head, boxX+80, boxY-12)
