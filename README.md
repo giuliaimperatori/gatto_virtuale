@@ -18,7 +18,7 @@ Lo scopo di questo progetto è quello di poter interagire con un interfaccia att
 - dito su scatolone, gatto dentro scatolone
 - dito su scatola cibo, gatto mangia dalla ciotola
 - dito su gomitolo, gatto gioca con gomitolo
-- diito su gatto, gatto fa le fusa
+- dito su gatto, gatto fa le fusa
 
 
 ## Riferimenti progettuali
