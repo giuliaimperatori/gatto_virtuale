@@ -51,24 +51,31 @@ Per far in modo che l'immagine del gatto cambiasse in base alla posizione del di
 	myXA = map(indice.x - 34, 0,640,0,windowWidth)
 	myYA = map(indice.y - 40, 0,480,0,windowHeight)
 
-//se indice su gomitolo disegna gatto che gioca
+
+se indice su gomitolo disegna gatto che gioca
+
 if (myXA > ball_woolX && myXA < ball_woolX + ball_woolW && myYA > ball_woolY && myYA < ball_woolY + ball_woolH) {
 	cat_image = image (cat_playing, 620, 970)
 			
 }
-//se inidce su cibo disegna gatto che mangia dalla ciotola
+
+se inidce su cibo disegna gatto che mangia dalla ciotola
+
 else if (myXA > foodX && myXA < foodX + foodW && myYA > foodY && myYA < foodY + foodH) {
 	cat_image = image (cat_eating, 460, 950)
 	cat_image = image (bowl, 440, 1040)
 }
 
-//se indice su scatolone disegna gatto dentro scatola
+se indice su scatolone disegna gatto dentro scatola
+
 else if (myXA > boxX && myXA < boxX + boxW && myYA > boxY && myYA < boxY + boxH) {
 	cat_image = image (cat_head, boxX+80, boxY-12)
 	image (hand, myXA, myYA);
 
 } 
-//se indice da altre parti disegna gatto al centro della stanza
+
+se indice da altre parti disegna gatto al centro della stanza
+
 else {
 	cat_image = cat_sitting
 	// se indice su gatto disegna cuoricini
