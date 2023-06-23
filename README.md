@@ -78,24 +78,33 @@ se indice da altre parti disegna gatto al centro della stanza
 
 else {
 	cat_image = cat_sitting
-	// se indice su gatto disegna cuoricini
+ 
+	se indice su gatto disegna cuoricini
+ 
 	if (myXA > catX && myXA < catX + catW && myYA > catY && myYA < catY + catH) {
 		cat_image = cat_with_hearts
 		flag = 1
 	} 
-	//se indice a sinistra del gatto, guarda a sinistra
+	
+ 	se indice a sinistra del gatto, guarda a sinistra
+  
 	else if (myXA < width/3){
 	cat_image = cat_looking_left
 	}
-	//se indice al centro della stanza gatto guarda dritto
+ 	
+	se indice al centro della stanza gatto guarda dritto
+ 
 	else if (myXA > width/3 && myXA < width/3*2) {
 		cat_image = cat_sitting
 				} 
-	//se inidce a destra il gatto guarda a destra
+	se inidce a destra il gatto guarda a destra
+ 
 	else {
 		cat_image = cat_looking_right
 	}
-	//se indice in alto, gatto guarda su
+ 
+	se indice in alto, gatto guarda su
+ 
 	if (myYA < height/2)
 	cat_image = cat_looking_up
 
