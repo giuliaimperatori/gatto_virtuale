@@ -18,43 +18,97 @@ Lo scopo di questo progetto è quello di poter interagire con un interfaccia att
 - dito su scatolone, gatto dentro scatolone
 - dito su scatola cibo, gatto mangia dalla ciotola
 - dito su gomitolo, gatto gioca con gomitolo
-- diito su gatto, gatto fa le fusa
+- dito su gatto, gatto fa le fusa
 
 
 ## Riferimenti progettuali
-Dolor sit amet consectetur adipiscing elit duis tristique. Sociis natoque penatibus et magnis dis parturient montes nascetur. Est sit amet facilisis magna. Tellus rutrum tellus pellentesque eu. Dictum sit amet justo donec enim. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Sed faucibus turpis in eu mi bibendum neque egestas congue. Tellus in metus vulputate eu scelerisque felis imperdiet proin. Dolor magna eget est lorem ipsum dolor. Sit amet mattis vulputate enim nulla. Elit pellentesque habitant morbi tristique senectus et. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa.
+Per l'idea del gatto virtuale, mi sono ispirata al Tamagotchi, un mini gioco elettronico portatile giapponese pensato per un giocatore singolo. Il gioco consiste nell'interazione tra il giocatore e l'animale virtuale, quest'ultimo va accudito come un'animale domestico.
 
 
-https://
+https://static.fnac-static.com/multimedia/Images/FR/MDM/8c/e3/00/16835468/1520-1/tsp20230110111849/Jouet-a-manipuler-Tamagotchi-Original-Modele-aleatoire.jpg
 
 
 ## Design dell’interfraccia e modalià di interazione
-Facilisis magna etiam tempor orci eu. Felis donec et odio pellentesque diam volutpat commodo. Dis parturient montes nascetur ridiculus mus mauris vitae. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Accumsan sit amet nulla facilisi. Ultricies leo integer malesuada nunc vel risus. Est lorem ipsum dolor sit. Ultrices neque ornare aenean euismod elementum nisi. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida. Placerat duis ultricies lacus sed turpis tincidunt id aliquet. Arcu dictum varius duis at consectetur lorem donec massa sapien. Pellentesque habitant morbi tristique senectus. Turpis massa sed elementum tempus egestas sed sed risus pretium. Eros donec ac odio tempor orci. Pellentesque id nibh tortor id aliquet lectus. Risus feugiat in ante metus dictum at. Quam pellentesque nec nam aliquam sem et tortor consequat id. Feugiat nibh sed pulvinar proin gravida hendrerit lectus a. Sit amet dictum sit amet justo donec enim.
-
+Ho realizzato lo sfondo e gli oggeti su carta con una penna nera, per poi aggiungere i colori con photoshop, per il gatto, ho utilizzato delle immagini prese dal web, modificandole con photoshop beta, ovvero con l'aiuto dell'intelligenza artificiale. L’interazione con il gatto è possibile grazie alla funzione Detector di MediaPipe, che riconosce il punto sull'indice, al quale ho associato una piccola mano, in modo tale da capire dove si trova l'indice, dato che non si vede la webcam. 
 
 
 ## Tecnologia usata
-Nunc consequat interdum varius sit amet mattis vulputate. Vehicula ipsum a arcu cursus vitae congue. Odio ut sem nulla pharetra. Accumsan lacus vel facilisis volutpat est velit egestas dui id. Quisque egestas diam in arcu cursus. Eget nulla facilisi etiam dignissim diam. Aenean sed adipiscing diam donec adipiscing tristique. Porttitor massa id neque aliquam. Sem viverra aliquet eget sit amet tellus cras. Scelerisque eu ultrices vitae auctor eu augue ut lectus. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed turpis tincidunt id aliquet risus feugiat.
+Per far in modo che l'immagine del gatto cambiasse in base alla posizione del dito, ho definito "hand", ovvero la mano che compare sopra l'indice, con la posizione myXA, myYA, dopodiché ho disegnato su un foglio di carta un rettangolo, ovvero lo schermo, e l'ho suddiviso in rettangoli ragionando sulla disequazione da utilizzare, prima semplificandola e poi traducendola nel linguaggio corretto: "px > gx e px < gx + gw e py > gy e py < gy + gh", p sta per "punto", g sta per "gatto" w sta per "larghezza" e h sta per "altezza", tradotto nel linguaggio del codice: "if (myXA > catX && myXA < catX + catW && myYA > catY && myYA < catY + catH)"
 
-      const distPolliceMignoloX = abs(pollice.x - mignolo.x);
-			const distPolliceMignoloY = abs(pollice.y - mignolo.y);
-			const boccaWidth = distPolliceMignoloX * 2;
-			const boccaHeight = distPolliceMignoloY * 2;
-			image(bocca, mignolo.x - distPolliceMignoloX, mignolo.y - distPolliceMignoloY, boccaWidth, boccaHeight);
-			const distAnulareIndice = dist(anulare.x, anulare.y, indice.x, indice.y);
-      
-      push()
-			if (distAnulareIndice > 100) {
-				image(occhiodx, anulare.x-20, anulare.y-20);
-			} else {
-				image(occhiodxchiuso, anulare.x-20, anulare.y-20)
-			}
-			pop()
-			console.log(distAnulareIndice)
+     push()
+	image (house, houseX, houseY);
+	image (mensole_1, mensole_1X, mensole_1Y)
+	image (mensole_2, mensole_2X, mensole_2Y)
+	image (food, foodX, foodY);
+	image (ball_wool, ball_woolX, ball_woolY);
+	image (box, boxX, boxY);
+	pop()
 
+	push()
+	image (hand, myXA, myYA);
+	pop()
+			
+	myXA = map(indice.x - 34, 0,640,0,windowWidth)
+	myYA = map(indice.y - 40, 0,480,0,windowHeight)
+
+
+	//se indice su gomitolo disegna gatto che gioca
+	if (myXA > ball_woolX && myXA < ball_woolX + ball_woolW && myYA > ball_woolY && myYA < ball_woolY + ball_woolH) {
+	cat_image = image (cat_playing, 620, 970)
+				
+	}
+
+	//se inidce su cibo disegna gatto che mangia dalla ciotola
+	else if (myXA > foodX && myXA < foodX + foodW && myYA > foodY && myYA < foodY + foodH) {
+		cat_image = image (cat_eating, 460, 950)
+		cat_image = image (bowl, 440, 1040)
+	}
+
+	//se indice su scatolone disegna gatto dentro scatola
+	else if (myXA > boxX && myXA < boxX + boxW && myYA > boxY && myYA < boxY + boxH) {
+		cat_image = image (cat_head, boxX+80, boxY-12)
+		image (hand, myXA, myYA);
+
+	} 
+
+	//se indice da altre parti disegna gatto al centro della stanza
+	else {
+		cat_image = cat_sitting
+ 
+		//se indice su gatto disegna cuoricini
+		if (myXA > catX && myXA < catX + catW && myYA > catY && myYA < catY + catH) {
+			cat_image = cat_with_hearts
+			flag = 1
+		} 
+	
+ 		//se indice a sinistra del gatto, guarda a sinistra
+		else if (myXA < width/3){
+		cat_image = cat_looking_left
+		}
+ 	
+		//se indice al centro della stanza gatto guarda dritto
+		else if (myXA > width/3 && myXA < width/3*2) {
+			cat_image = cat_sitting
+				} 
+		//se inidce a destra il gatto guarda a destra
+		else {
+			cat_image = cat_looking_right
+		}
+ 
+		//se indice in alto, gatto guarda su
+		if (myYA < height/2)
+		cat_image = cat_looking_up
+
+				
+		}
+
+	image (cat_image, catX, catY);
+	if(flag == 1){
+		image (hand, myXA, myYA);
+		flag = 0
 
 ## Target e contesto d’uso
-Sed enim ut sem viverra aliquet eget sit. Iaculis at erat pellentesque adipiscing commodo. Et pharetra pharetra massa massa ultricies mi quis hendrerit dolor. At tempor commodo ullamcorper a lacus vestibulum sed arcu. Ipsum faucibus vitae aliquet nec ullamcorper sit. Tempus quam pellentesque nec nam aliquam sem et tortor. Turpis egestas sed tempus urna et pharetra pharetra massa. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel.
+Potrebbe essere utilizzato come mini gioco online adatto a tutte le età, per gli amanti dei giochi online ed è interessante perché al posto del mouse si utilizza il dito. Sviluppando altre funzioni, potrebbe diventare un gioco con dei livelli da superare, ad esempio, se il gatto viene accudito in modo corretto, questo si dimostra felice e in buona salute.
 
 [<img src="immagini-video/immagine_01.png" width="514" alt="immagine_01">]()
 [<img src="immagini-video/immagine_02.png" width="300" alt="immagine_02">]()
