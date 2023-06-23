@@ -110,14 +110,14 @@ Per far in modo che l'immagine del gatto cambiasse in base alla posizione del di
 ## Target e contesto d’uso
 Potrebbe essere utilizzato come mini gioco online adatto a tutte le età, per gli amanti dei giochi online ed è interessante perché al posto del mouse si utilizza il dito. Sviluppando altre funzioni, potrebbe diventare un gioco con dei livelli da superare, ad esempio, se il gatto viene accudito in modo corretto, questo si dimostra felice e in buona salute.
 
-[<img src="immagini-video/immagine_01.png" width="514" alt="immagine_01">]()
-[<img src="immagini-video/immagine_02.png" width="300" alt="immagine_02">]()
-[<img src="immagini-video/immagine_03.png" width="300" alt="immagine_03">]()
-[<img src="immagini-video/immagine_04.png" width="300" alt="immagine_04">]()
-[<img src="immagini-video/immagine_05.png" width="300" alt="immagine_05">]()
-[<img src="immagini-video/immagine_06.png" width="300" alt="immagine_06">]()
-[<img src="immagini-video/immagine_07.png" width="300" alt="immagine_07">]()
-[<img src="immagini-video/immagine_08.png" width="300" alt="immagine_08">]()
+[<img src="documentazione/immagini-video/immagine_01.png" width="514" alt="immagine_01">]()
+[<img src="documentazione/immagini-video/immagine_02.png" width="300" alt="immagine_02">]()
+[<img src="documentazione/immagini-video/immagine_03.png" width="300" alt="immagine_03">]()
+[<img src="documentazione/immagini-video/immagine_04.png" width="300" alt="immagine_04">]()
+[<img src="documentazione/immagini-video/immagine_05.png" width="300" alt="immagine_05">]()
+[<img src="documentazione/immagini-video/immagine_06.png" width="300" alt="immagine_06">]()
+[<img src="documentazione/immagini-video/immagine_07.png" width="300" alt="immagine_07">]()
+[<img src="documentazione/immagini-video/immagine_08.png" width="300" alt="immagine_08">]()
 
 
 
