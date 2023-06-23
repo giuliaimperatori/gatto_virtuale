@@ -51,7 +51,6 @@ Per far in modo che l'immagine del gatto cambiasse in base alla posizione del di
 	myXA = map(indice.x - 34, 0,640,0,windowWidth)
 	myYA = map(indice.y - 40, 0,480,0,windowHeight)
 
-
 se indice su gomitolo disegna gatto che gioca
 
 if (myXA > ball_woolX && myXA < ball_woolX + ball_woolW && myYA > ball_woolY && myYA < ball_woolY + ball_woolH) {
