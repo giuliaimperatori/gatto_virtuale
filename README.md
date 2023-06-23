@@ -56,7 +56,7 @@ Nunc consequat interdum varius sit amet mattis vulputate. Vehicula ipsum a arcu 
 ## Target e contesto d’uso
 Sed enim ut sem viverra aliquet eget sit. Iaculis at erat pellentesque adipiscing commodo. Et pharetra pharetra massa massa ultricies mi quis hendrerit dolor. At tempor commodo ullamcorper a lacus vestibulum sed arcu. Ipsum faucibus vitae aliquet nec ullamcorper sit. Tempus quam pellentesque nec nam aliquam sem et tortor. Turpis egestas sed tempus urna et pharetra pharetra massa. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel.
 
-[<img src="immagini-video/immagine_01.png" width="300" alt="immagine_01">]()
+[<img src="immagini-video/immagine_01.png" width="514" alt="immagine_01">]()
 [<img src="immagini-video/immagine_02.png" width="300" alt="immagine_02">]()
 [<img src="immagini-video/immagine_03.png" width="300" alt="immagine_03">]()
 [<img src="immagini-video/immagine_04.png" width="300" alt="immagine_04">]()
