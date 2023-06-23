@@ -55,5 +55,9 @@ Sed enim ut sem viverra aliquet eget sit. Iaculis at erat pellentesque adipiscin
 [<img src="immagini-video/immagine_05.png" width="300" alt="immagine_03">]()
 
 
-video
+
+
+https://github.com/giuliaimperatori/gatto_virtuale/assets/126774277/8cbf9fd8-2180-4d5e-a9aa-45173857d398
+
+
 
