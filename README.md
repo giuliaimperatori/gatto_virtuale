@@ -59,8 +59,11 @@ Sed enim ut sem viverra aliquet eget sit. Iaculis at erat pellentesque adipiscin
 [<img src="immagini-video/immagine_01.png" width="300" alt="immagine_01">]()
 [<img src="immagini-video/immagine_02.png" width="300" alt="immagine_02">]()
 [<img src="immagini-video/immagine_03.png" width="300" alt="immagine_03">]()
-[<img src="immagini-video/immagine_04.png" width="300" alt="immagine_02">]()
-[<img src="immagini-video/immagine_05.png" width="300" alt="immagine_03">]()
+[<img src="immagini-video/immagine_04.png" width="300" alt="immagine_04">]()
+[<img src="immagini-video/immagine_05.png" width="300" alt="immagine_05">]()
+[<img src="immagini-video/immagine_03.png" width="300" alt="immagine_06">]()
+[<img src="immagini-video/immagine_04.png" width="300" alt="immagine_07">]()
+[<img src="immagini-video/immagine_05.png" width="300" alt="immagine_08">]()
 
 
 
